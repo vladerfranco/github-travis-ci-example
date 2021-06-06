@@ -1,0 +1,14 @@
+language: python
+
+python: 
+  - "3.8"
+
+script:
+  - pytest
+  
+notifications:
+  email:
+    recipients:
+      - vladerfranco@gmail.com
+      on_success: never
+      on_failure: always
