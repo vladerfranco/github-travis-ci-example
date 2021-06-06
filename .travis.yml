@@ -14,5 +14,5 @@ notifications:
   email:
     recipients:
       - vladerfranco@gmail.com
-      on_success: never
-      on_failure: always
+    on_success: never
+    on_failure: always
