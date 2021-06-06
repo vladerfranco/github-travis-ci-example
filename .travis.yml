@@ -2,9 +2,13 @@ language: python
 
 python: 
   - "3.8"
+  
+before_install: |
+  pip3 install pytest
+  if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
 
-script:
-  - pytest
+script pytest:
+  - py.test
   
 notifications:
   email:
