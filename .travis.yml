@@ -6,6 +6,8 @@ python:
 before_install: |
   pip3 install pytest
   if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
+  
+services: mongodb
 
 script:
   - cd user_crud
