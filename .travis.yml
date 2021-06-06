@@ -8,7 +8,8 @@ before_install: |
   if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
 
 script pytest:
-  - py.test
+  - cd user_crud
+  - pytest
   
 notifications:
   email:
